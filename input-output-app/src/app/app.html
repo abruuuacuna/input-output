@@ -1,0 +1,5 @@
+@for (p of productos; track p.id){
+<app-producto-card [producto]="p" (eliminado)="onEliminado($event)"
+></app-producto-card>
+
+}
